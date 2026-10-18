@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lean Canvas · Taller 3IE</title>
+  <meta name="description" content="Formulario guiado para completar las plantillas del taller 3IE.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegación del formulario">
+      <div class="brand">
+        <span class="brand-mark">3IE</span>
+        <div><strong>Lean Canvas</strong><small>Taller de emprendimiento</small></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Tu progreso</span><strong id="progress-text">1 de 12</strong></div>
+        <div class="progress-track"><span id="progress-bar"></span></div>
+      </div>
+      <nav id="page-nav"></nav>
+      <div class="sidebar-footer">Tus respuestas se guardan<br>automáticamente en este navegador.</div>
+    </aside>
+
+    <main class="main-content">
+      <header class="mobile-header">
+        <button class="menu-button" id="menu-button" aria-label="Abrir menú">☰</button>
+        <span class="mobile-brand">3IE · Lean Canvas</span>
+        <span id="mobile-counter">1/12</span>
+      </header>
+      <div id="page-container"></div>
+      <div class="page-actions">
+        <button class="button button-secondary" id="prev-button">← Anterior</button>
+        <button class="button button-primary" id="next-button">Siguiente <span>→</span></button>
+      </div>
+    </main>
+  </div>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
